@@ -6,7 +6,7 @@
 参考链接：https://www.cnblogs.com/caoyingjielxq/p/9723570.html
 
 
-不需要额外的数据库服务器
+使用内存数据库
 ```md
 spring:
   main:
