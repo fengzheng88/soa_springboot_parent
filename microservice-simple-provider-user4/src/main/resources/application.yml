@@ -1,0 +1,42 @@
+server:
+  port: 7904
+
+#datajpa
+spring:
+#allow-bean-definition-overriding: true    bean 实例覆盖
+  main:
+    allow-bean-definition-overriding: true
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: h2
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+  application:
+    name: mircoservice-simple-provider-user2
+
+logging:
+  level:
+    root: info
+    org.hibernate: info
+    org.hibernate.type.descriptor.sql: trace
+    org.hibernate.type.descriptor.sql.BasiExtractor: trace
+    com.skx: debug
+    file: microservice-simple-provider-user/data/log4j.log
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+
+  #file: microservice-simple-provider-user/data/log4j.log
+
+
+

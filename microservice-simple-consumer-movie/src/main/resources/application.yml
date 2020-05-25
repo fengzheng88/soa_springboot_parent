@@ -1,0 +1,28 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: microservice-simple-consumer-movie
+
+url:
+  address: http://127.0.0.1:7900/simple/
+
+eureka:
+  client:
+    healthcheck:
+       enabled: true
+    service-url:
+       defaultZone: http://localhost:8761/eureka
+  instance:
+      prefer-ip-address: true
+      instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+
+
+  #instance:
+    #  ip-address: true
+     # instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+
+
+
+
