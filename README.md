@@ -7,6 +7,7 @@
 
 
 不需要额外的数据库服务器
+```md
 spring:
   main:
     allow-bean-definition-overriding: true
@@ -19,3 +20,4 @@ spring:
     platform: h2
     schema: classpath:schema.sql
     data: classpath:data.sql
+```
