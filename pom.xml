@@ -31,7 +31,7 @@
         <jpa.version>2.1.3.RELEASE</jpa.version>
         <web.version>2.1.3.RELEASE</web.version>
         <starter.version>2.1.3.RELEASE</starter.version>
-        <h2.version>1.4.199</h2.version>
+        <h2.version>2.1.210</h2.version>
         <test.version>2.1.3.RELEASE</test.version>
     </properties>
 
