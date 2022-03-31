@@ -29,7 +29,7 @@
     <properties>
         <java.version>1.8</java.version>
         <jpa.version>2.1.3.RELEASE</jpa.version>
-        <web.version>2.1.3.RELEASE</web.version>
+        <web.version>2.5.12</web.version>
         <starter.version>2.1.3.RELEASE</starter.version>
         <h2.version>1.4.199</h2.version>
         <test.version>2.1.3.RELEASE</test.version>
